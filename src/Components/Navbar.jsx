@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import mjar from '../assets/mjar-logo.svg'
 import {GiHamburgerMenu} from 'react-icons/gi'
 
