@@ -4,7 +4,7 @@ import '../App.css'
 
 const MobileMenu = ({openMenu, setOpenMenu}) => {
   return (
-    <div className='animate-menu bg-primary absolute top-0 right-0 h-screen w-screen animate-menu'>
+    <div className='animate-menu bg-primary absolute top-0 right-0 h-screen w-screen animate-menu z-20'>
         <div className='w-full flex justify-end p-6'>
             <button onClick={() => setOpenMenu(!openMenu)} className='text-3xl text-light'><AiOutlineClose /></button>
         </div>

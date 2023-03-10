@@ -1,3 +1,5 @@
+/* Animate Mobile Menu - MobileMenu.jsx */
+
 .animate-menu {
   animation: fadeMenuIn 0.5s;
 }
@@ -9,6 +11,40 @@
   }
   to {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animate 5 Stripes - Hero.jsx */
+
+.animate-stripe-1 {
+  animation: stripeFade 1s 1s forwards;
+
+}
+.animate-stripe-2 {
+  animation: stripeFade 1s 1.2s forwards;
+
+}
+.animate-stripe-3 {
+  animation: stripeFade 1s 1.4s forwards;
+
+}
+.animate-stripe-4 {
+  animation: stripeFade 1s 1.6s forwards;
+
+}
+.animate-stripe-5 {
+  animation: stripeFade 1s 1.8s forwards;
+
+}
+
+@keyframes stripeFade {
+  from {
+    height: 0;
+    opacity: 0
+  }
+  to {
+    height: 16rem;
     opacity: 1;
   }
 }

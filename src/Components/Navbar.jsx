@@ -5,9 +5,8 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 
 const Navbar = ({openMenu, setOpenMenu}) => {
   
-  console.log(openMenu)
   return (
-    <nav className='bg-primary'>
+    <nav className='bg-primary fixed z-20 w-full'>
       <div className='max-w-7xl mx-auto flex items-center justify-between'>
         {/* Logo */}
         <div className='mx-6 cursor-pointer'><img className='w-20 h-16' src={mjar} alt="" /></div>
