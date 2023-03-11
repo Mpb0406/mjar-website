@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.primary-button {
+  @apply transition duration-200 bg-secondary rounded-md text-light text-lg shadow-lg;
+}
+
+.secondary-button {
+    @apply border-2 border-secondary rounded-md text-light text-lg shadow-lg transition duration-200;
+  }

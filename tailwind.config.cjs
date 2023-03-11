@@ -5,14 +5,16 @@ module.exports = {
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
     },
-    colors: {
-      primary: "#2D2D3E",
-      secondary: "#571923",
-      light: "#fff",
-      dark: "#0F0F1C",
-      info: "#5F6772",
+
+    extend: {
+      colors: {
+        primary: "#2D2D3E",
+        secondary: "#571923",
+        light: "#fff",
+        dark: "#0F0F1C",
+        info: "#5F6772",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };
