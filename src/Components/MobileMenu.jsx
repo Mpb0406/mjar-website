@@ -3,6 +3,9 @@ import {AiOutlineClose} from 'react-icons/ai'
 import '../App.css'
 
 const MobileMenu = ({openMenu, setOpenMenu}) => {
+  const appLink = 'https://mjartrainingwebapp.herokuapp.com'
+    const appURL = new URL(appLink).href
+
   return (
     <div className='animate-menu bg-primary absolute top-0 right-0 h-screen w-screen animate-menu z-20'>
         <div className='w-full flex justify-end p-6'>
@@ -10,8 +13,8 @@ const MobileMenu = ({openMenu, setOpenMenu}) => {
         </div>
         <div className='text-light'>
             <a onClick={() => setOpenMenu(!openMenu)} className='block text-center py-6 transition duration-500' href="#about">About</a>
-            <a className='block text-center py-6' href="#">SignUp</a>
-            <a className='block text-center py-6' href="#">Training App</a>
+            <a onClick={() => setOpenMenu(!openMenu)} className='block text-center py-6' href="#">Signup</a>
+            <a onClick={() => setOpenMenu(!openMenu)} target={'_blank'} rel="noopener noreferrer external" href={appURL} className='block text-center py-6'>Training App</a>
         </div>
     </div>
   )

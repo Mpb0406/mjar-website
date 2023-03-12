@@ -2,6 +2,8 @@ import React from 'react'
 import heroImg from '../assets/heroImg.png'
 
 const Hero = () => {
+    const appLink = 'https://mjartrainingwebapp.herokuapp.com'
+    const appURL = new URL(appLink).href
   return (
     <div className='h-screen'>
         <div className='relative h-screen w-full overflow-hidden'>
@@ -15,7 +17,7 @@ const Hero = () => {
                 {/* Button Container */}
                 <div className='flex justify-center space-x-12 mt-16'>
                     <button className='primary-button hover:bg-red-900 md:px-8 md:py-4 px-4 py-2 w-2/5'><a href="#about">Learn More</a></button>
-                    <button className='secondary-button hover:bg-red-900 md:px-8 md:py-4 px-4 py-2 w-2/5'>Try App</button>
+                    <button className='secondary-button hover:bg-red-900 md:px-8 md:py-4 px-4 py-2 w-2/5'><a target={'_blank'} rel="noopener noreferrer external" href={appURL}>Try App</a></button>
                 </div>
                 {/* 5 Stripes Container */}\
                 <div className='absolute -top-20 sm:left-20 left-16 -z-10 skew-y-[35deg] -rotate-[35deg] flex space-x-5'>
