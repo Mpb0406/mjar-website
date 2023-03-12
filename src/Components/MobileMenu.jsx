@@ -9,9 +9,9 @@ const MobileMenu = ({openMenu, setOpenMenu}) => {
             <button onClick={() => setOpenMenu(!openMenu)} className='text-3xl text-light'><AiOutlineClose /></button>
         </div>
         <div className='text-light'>
-            <a className='block text-center py-6' href="">About</a>
-            <a className='block text-center py-6' href="">SignUp</a>
-            <a className='block text-center py-6' href="">Training App</a>
+            <a onClick={() => setOpenMenu(!openMenu)} className='block text-center py-6 transition duration-500' href="#about">About</a>
+            <a className='block text-center py-6' href="#">SignUp</a>
+            <a className='block text-center py-6' href="#">Training App</a>
         </div>
     </div>
   )
