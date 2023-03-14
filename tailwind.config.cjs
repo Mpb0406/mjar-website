@@ -12,7 +12,7 @@ module.exports = {
         secondary: "#571923",
         light: "#fff",
         dark: "#0F0F1C",
-        info: "#B8B8B8",
+        info: "#707783",
       },
     },
   },

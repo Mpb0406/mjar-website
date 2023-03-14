@@ -48,3 +48,16 @@
     opacity: 1;
   }
 }
+
+/* Animate Squiggle SVG in FAQ.jsx */
+.squiggle {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
