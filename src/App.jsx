@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar'
 import MobileMenu from './Components/MobileMenu'
 import Hero from './Components/Hero'
 import About from './Components/About'
+import FAQ from './Components/FAQ'
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false)
@@ -14,6 +15,7 @@ function App() {
       {openMenu && (<MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />)}
       <Hero />
       <About />
+      <FAQ />
     </div>
   )
 }
