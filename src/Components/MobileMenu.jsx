@@ -1,10 +1,10 @@
 import React from 'react'
 import {AiOutlineClose} from 'react-icons/ai'
 import '../App.css'
+import { Link } from 'react-router-dom'
+import { NavHashLink } from 'react-router-hash-link'
 
 const MobileMenu = ({openMenu, setOpenMenu}) => {
-  const appLink = 'https://mjartrainingwebapp.herokuapp.com'
-    const appURL = new URL(appLink).href
 
   return (
     <div className='animate-menu sticky bg-primary absolute top-0 right-0 h-screen w-screen animate-menu z-20'>
@@ -12,9 +12,9 @@ const MobileMenu = ({openMenu, setOpenMenu}) => {
             <button onClick={() => setOpenMenu(!openMenu)} className='text-3xl text-light'><AiOutlineClose /></button>
         </div>
         <div className='text-light'>
-            <a onClick={() => setOpenMenu(!openMenu)} className='block text-center py-6 transition duration-500' href="#about">About</a>
-            <a onClick={() => setOpenMenu(!openMenu)} className='block text-center py-6' href="#faq">FAQ</a>
-            <a onClick={() => setOpenMenu(!openMenu)} target={'_blank'} rel="noopener noreferrer external" href={appURL} className='block text-center py-6'>Training App</a>
+          <NavHashLink to="/#about" onClick={() => setOpenMenu(!openMenu)} className='block text-center py-6 transition duration-500'>About</NavHashLink>
+          <NavHashLink to="/#faq" onClick={() => setOpenMenu(!openMenu)} className='block text-center py-6'>FAQ</NavHashLink>
+          <Link target="_blank" to="https://mjartrainingwebapp.herokuapp.com" onClick={() => setOpenMenu(!openMenu)} className='block text-center py-6'>Training App</Link>
         </div>
     </div>
   )
