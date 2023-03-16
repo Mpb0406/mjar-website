@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+input, textarea {
+  @apply border border-2 border-[#D1D5DB] focus:outline focus:outline-secondary focus:outline-2 p-2 rounded-md
+}
+
 .primary-button {
   @apply transition duration-200 bg-secondary rounded-md text-light text-lg shadow-lg;
 }
@@ -13,3 +17,4 @@ html {
 .secondary-button {
     @apply border-2 border-secondary rounded-md text-light text-lg shadow-lg transition duration-200;
   }
+
