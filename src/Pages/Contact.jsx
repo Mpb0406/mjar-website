@@ -5,7 +5,7 @@ const Contact = () => {
     <div className='pt-32'>
         <h1 className='text-center text-3xl font-bold'>Contact Us</h1>
         <p className='text-center py-6'>Ask us anything.</p>
-        <form className='flex flex-col md:w-1/2 mx-auto' name='contact' method='POST'>
+        <form className='flex flex-col md:w-1/2 mx-auto' name='contact' method='POST' netlify data-netlify={true} >
             <input type="hidden" name="form-name" value="contact" />
             <div className='flex flex-col m-2'>
                 <label className='py-2 text-sm font-semibold' htmlFor="name">Name</label>
