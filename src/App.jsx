@@ -14,7 +14,7 @@ function App() {
       <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
       {openMenu && (<MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />)}
       <Routes>
-      <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
