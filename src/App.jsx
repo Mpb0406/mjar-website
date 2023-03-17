@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar'
 import MobileMenu from './Components/MobileMenu'
 import Contact from './Pages/Contact'
 import Home from './Pages/Home'
+import Footer from './Components/Footer'
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false)
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
